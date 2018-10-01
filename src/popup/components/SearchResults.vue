@@ -1,7 +1,11 @@
 <template>
   <div class="search-results">
     <p>search results for: {{ searchTerm }}</p>
-    <cookie-result v-for="(cookie, i) in cookieResults" :key="i" :cookieData="cookie"></cookie-result>
+    <cookie-result 
+    v-for="(cookie, i) in cookieResults" 
+    :key="i" 
+    :cookieData="cookie"
+    ></cookie-result>
   </div>
 </template>
 
@@ -22,12 +26,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .cookie-result {
-    text-align: center;
-    cursor: pointer;
-    transition: font-size 0.5s ease;
-  }
-  .cookie-result:hover{
+.cookie-result {
+  text-align: center;
+  cursor: pointer;
+  transition: font-size 0.5s ease;
+
+  &:hover{
     font-size: 15px;
   }
+}
 </style>

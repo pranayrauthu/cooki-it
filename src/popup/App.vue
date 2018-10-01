@@ -15,6 +15,8 @@ export default {
 
 
 <style lang="scss">
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+
 	html {
 		overflow: scroll;
 		overflow-x: hidden;
@@ -26,6 +28,9 @@ export default {
 	/* optional: show position indicator in red */
 	::-webkit-scrollbar-thumb {
 		background: #FF0000;
+	}
+	* {
+		font-family: 'Open Sans', sans-serif;
 	}
 </style>
 <style lang="scss" scoped>

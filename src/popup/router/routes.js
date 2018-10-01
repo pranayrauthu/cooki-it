@@ -1,15 +1,15 @@
-import PageIndex from './pages/Index';
 import EditCookie from './pages/EditCookie';
 import SearchCookie from './pages/SearchCookie';
 
 export default [
   {
     path: '/',
-    component: PageIndex,
+    component: SearchCookie,
   },
   {
-  	path: '/edit',
-  	component: EditCookie
+  	path: '/edit/:type',
+  	component: EditCookie,
+    name: 'edit'
   },
   {
   	path: '/search',

@@ -1,6 +1,6 @@
 {
-  "name": "cook-it",
-  "version": "1.0.0",
+  "name": "cooki-it",
+  "version": "1.0.1",
   "description": "Cookie editor for humans",
   "author": "pranayrauthu <pranay.rauthu@gmail.com>",
   "scripts": {

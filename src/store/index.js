@@ -8,11 +8,24 @@ import * as actions from './actions';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    searchTerm: '',
-    cookieResults: []
-  },
-  getters,
-  mutations,
-  actions,
+	state: {
+		searchTerm: '',
+		cookieResults: [],
+		editCookieForm: {
+			domain: '',
+			hostOnly: '',
+			httpOnly: '',
+			name: '',
+			path: '',
+			sameSite: '',
+			secure: '',
+			session: '',
+			storeId: '',
+			value: '',
+		},
+		editMode: 'ADD'
+	},
+	getters,
+	mutations,
+	actions,
 });
